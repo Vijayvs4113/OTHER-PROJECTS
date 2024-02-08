@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <form>
+        <h2>
+            How can we help you?
+        </h2>
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your E-Mail Address</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Your Phone Number</label>
+        <input type="number" id="phone" name="phone" required>
+        <section>
+            <label for="Message">Your Message</label>
+            <textarea id="Message" name="Message" rows="5" required></textarea>
+        </section>
+
+        <label for="find">How did you find us?</label>
+        <select name="find" id="find" required>
+            <option value="Web Search">Web Search</option>
+            <option value="Google">Google</option>
+            <option value="Linked In">Linked In</option>
+        </select>
+
+        <h2>How should we reply?</h2>
+        <div class="form-control-inline"> 
+            <input type="radio" id="reply" name="reply" value="Call Me" required>
+            <label for="">Call Me</label>
+        </div>
+        <div class="form-control-inline">
+            <input type="radio" id="reply" name="reply" value="Send me an emil" required>
+            <label for="">Send me an email</label>
+        </div>
+        <div class="form-control-inline">
+            <input type="radio" id="reply" name="reply" value="Don't Reply" required>
+            <label for="">Don't reply</label>
+        </div>
+
+        <div class="form-control-inline" id="checkbox1">
+            <input type="checkbox" id="" name="" value="" required>
+            <label for="">Accept Terms</label>
+        </div>
+
+        <div id="buttons">
+            <button type="reset" id="clear-btn">Clear</button>
+            <button type="submit" id="submit-btn">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
